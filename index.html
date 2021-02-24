@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Company Name -->
+    <link rel="icon" href="images/favicon.ico">
+    <title>ZH SAIKOT</title>
+    <link rel="stylesheet" href="css/all.css">
+
+    <script rel="script" src="js/jquery-3.5.1.js"></script>
+    <script rel="script" src="js/custom.js"></script>
+    <style>
+        section {
+            padding-top: 100px;
+            padding-bottom: 75px;
+        }
+        
+        .bg-transparent-white {
+            background-color: #ffffff5c;
+        }
+        
+        .top-auto {
+            top: auto;
+        }
+        
+        .card-hover-visible {
+            visibility: hidden;
+        }
+        
+        .card:hover .card-hover-visible {
+            visibility: visible;
+        }
+        
+        .bg-transparent-dark {
+            background-color: #00000045;
+        }
+        
+        .left-auto {
+            left: auto;
+        }
+        
+        [id*="-error"] {
+            color: red;
+            float: left;
+        }
+        
+        #main-menu img {
+            height: 50px;
+        }
+        
+        #main-menu ul li a.active,
+        ul li a:hover {
+            background-color: #28a745;
+            border-radius: 10%;
+        }
+        
+        #home {
+            background-image: url(images/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #service {
+            background-image: url(images/serve.jpg);
+            background-attachment: fixed;
+        }
+        
+        #project {
+            background-image: url(images/project.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        #review {
+            background-image: url(images/review.jpg);
+        }
+        
+        #contact {
+            background-image: url(images/contact.jpg);
+            background-attachment: fixed;
+        }
+        
+        #social ul li {
+            margin-right: 12px;
+        }
+        
+        #social ul li a {
+            height: 40px;
+            width: 40px;
+        }
+        
+        @media (max-width: 576px) {
+            .h5-sm {
+                font-size: 1rem;
+            }
+            .h6-sm {
+                font-size: .75rem;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#main-menu" data-offset="150">
+    <header>
+        <nav id="main-menu" class="navbar navbar-expand-md navbar-dark bg-transparent-dark fixed-top">
+            <a class="navbar-brand d-flex" href="#">
+                <img class="" src="images/logo.png" alt="Company Logo">
+                <h4 class="my-auto">ZH SAIKOT</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsExample04">
+                <ul class="navbar-nav">
+                    <li class="nav-item-active"><a class="nav-link mr-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mr-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link mr-3" href="#service">Services</a></li>
+                    <li class="nav-item"><a class="nav-link mr-3" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link mr-3" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-success" href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- == Slider Part == -->
+        <section id="home" class="pb-0">
+            <!-- == Content Part == -->
+            <div class="container">
+                <div class="row no-gutter">
+                    <div class="col-6 align-self-end pb-sm-5 pb-5 mb-md-5">
+                        <p class="text-warning mb-1 text-uppercase">Introduction</p>
+                        <h6 class="text-light mb-1 text-uppercase h6-sm"><small>Hello</small>, My Name is MD. Ziaul Hasan Saikot</h6>
+                        <h2 class="text-warning h5-sm" style=" text-align: left;">I'M A PROGRAMMER</h2>
+                        <div class="mt-4">
+                            <button class="btn btn-light rounded-pill text-uppercase px-sm-4 py-sm-2 py-1">My Work</button>
+                            <button class="btn btn-success rounded-pill text-uppercase px-sm-4 py-sm-2 py-1">Hire Me</button>
+                        </div>
+                    </div>
+                    <!-- == Persin image Part == -->
+                    <div class="col-6">
+                        <img class="img-fluid d-block text-right" src="images/saikotpic.png" alt="Saikot Pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == About Me Part == -->
+        <section id="about">
+            <div class="container">
+                <!-- == About Me Content == -->
+                <div class="text-center">
+                    <h6 class="text-success mb-0 font-weight-normal">About Me</h6>
+                    <h1 class="text-uppercase mb-5 pb-3">Welcome to my Website</h1>
+                    <p class="text-muted mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <!-- == Progress Part == -->
+                <div id="progress" class="row mb-4">
+                    <!-- == Progress Content == -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">Web Design</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success rounded-pill" role="progressbar" style="width: 90%"> 90%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">Php Development</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary rounded-pill" role="progressbar" style="width: 50%"> 50%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">Photography</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning rounded-pill" role="progressbar" style="width: 80%"> 80%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">Branding</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" style="width: 60%"> 60%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">Marketing</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger rounded-pill" role="progressbar" style="width: 70%"> 70%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <h6 class="text-muted">SEO</h6>
+                        <div class="progress rounded-pill h-50">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success rounded-pill" role="progressbar" style="width: 45%"> 45%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == Services Part == -->
+        <section id="service">
+            <div class="container text-center">
+                <div>
+                    <h6 class="text-success mb-0 font-weight-normal">My Services</h6>
+                    <h1 class="text-uppercase text-white mb-4">What I Do</h1>
+                </div>
+                <!-- == Services Content == -->
+                <div class="form-row row pt-5">
+                    <!-- == Services 001 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <div>
+                                <h2 class="text-warning mb-4"><i class="fas fa-bars"></i></h2>
+                                <h6 class="font-weight-bold text-uppercase mb-4 pb-4">Professional Code</h6>
+                                <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- == Services 002 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <h2 class="text-warning mb-4"><i class="far fa-lightbulb"></i></h2>
+                            <h6 class="font-weight-bold text-uppercase mb-4">Creative Ideas</h6>
+                            <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- == Services 003 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <h2 class="text-warning mb-4"><i class="fab fa-accusoft"></i></h2>
+                            <h6 class="font-weight-bold text-uppercase mb-4">SEO & Marketing</h6>
+                            <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- == Services 004 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <h2 class="text-warning mb-4"><i class="far fa-heart"></i></h2>
+                            <h6 class="font-weight-bold text-uppercase mb-4">User Friendly</h6>
+                            <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- == Services 005 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <h2 class="text-warning mb-4"><i class="fas fa-magic"></i></h2>
+                            <h6 class="font-weight-bold text-uppercase mb-4">Web Development</h6>
+                            <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <!-- == Services 006 == -->
+                    <div class="col-md-4 col-sm-6 mb-2">
+                        <div class="card p-4 bg-transparent-white text-white h-100 btn-outline-success">
+                            <h2 class="text-warning mb-4"><i class="fas fa-sliders-h"></i></h2>
+                            <h6 class="font-weight-bold text-uppercase mb-4">Portfolio Options</h6>
+                            <p class="m-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == Portfolio Part == -->
+        <section id="project">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="text-success mb-0 font-weight-normal">View All</h6>
+                    <h1 class="text-white text-uppercase mb-5 mb-4">My Projects</h1>
+                </div>
+                <!-- == Portfolio Content == -->
+                <div class="row form-row justify-content-center">
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 001 == -->
+                            <img class="card-img d-block" src="images/project1.png" alt="Project 1">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 002 == -->
+                            <img class="card-img d-block" src="images/project2.png" alt="Project 2">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 003 == -->
+                            <img class="card-img d-block" src="images/project3.png" alt="Project 3">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 004 == -->
+                            <img class="card-img d-block" src="images/project4.png" alt="Project 4">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 005 == -->
+                            <img class="card-img d-block" src="images/project5.jpg" alt="Project 5">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 006 == -->
+                            <img class="card-img d-block" src="images/project6.png" alt="Project 6">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 007 == -->
+                            <img class="card-img d-block" src="images/project7.jpg" alt="Project 7">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 008 == -->
+                            <img class="card-img d-block" src="images/project8.jpg" alt="Project 8">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 py-1">
+                        <div class="card">
+                            <!-- == Portfolio 009 == -->
+                            <img class="card-img d-block" src="images/project9.png" alt="Project 9">
+                            <div class="card-img-overlay p-2 top-auto card-hover-visible">
+                                <a href="" class="btn btn-dark btn-block">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == Review Part == -->
+        <section id="review" class="my-2">
+            <!-- == Review Content == -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="content">
+                            <!-- == Review Part01 == -->
+                            <h3 class="text-warning mb-4"><i class="far fa-lightbulb"></i></h3>
+                            <h3 class="text-white font-weight-bold mb-4">48</h3>
+                            <h6 class="text-white ">Project Done</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="content">
+                            <!-- == Review Part02 == -->
+                            <h3 class="text-warning mb-4"><i class="far fa-heart"></i></h3>
+                            <h3 class="text-white font-weight-bold mb-4">42</h3>
+                            <h6 class="text-white ">Satisfied Client</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="content">
+                            <!-- == Review Part03 == -->
+                            <h3 class="text-warning mb-4"><i class="fas fa-trophy"></i></h3>
+                            <h3 class="text-white font-weight-bold mb-4">56</h3>
+                            <h6 class="text-white ">Awards</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="content">
+                            <!-- == Review Part04 == -->
+                            <h3 class="text-warning mb-4"><i class="far fa-laugh-beam"></i></h3>
+                            <h3 class="text-white font-weight-bold mb-4">78</h3>
+                            <h6 class="text-white ">Happy Clients</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == Contact Us Part == -->
+        <section id="contact" class="bg-dark">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="text-success mb-0 font-weight-normal">Find Me</h6>
+                    <h1 class="text-uppercase text-white mb-5">Contact Me Now</h1>
+                </div>
+                <form class="form-row" name="contactForm">
+                    <!-- == Form part 1 == -->
+                    <div class="col-sm-6">
+                        <div class="content">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control bg-transparent text-white" value="" placeholder="Enter Your Name" Required>
+                                <span id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control bg-transparent text-white" value="" placeholder="Enter Your Email" required>
+                                <span id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="form-control bg-transparent text-white" value="" placeholder="Enter Your Phone" required>
+                                <span id="phone-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- == Form part 2 == -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control bg-transparent text-white" rows="5" style="height: 155px;" placeholder="Enter Your Message.."></textarea>
+                            <span id="message-error"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                        <button class="btn btn-outline-success" type="submit">Send Message</button>
+                    </div>
+                </form>
+                <!-- == Address Part == -->
+                <div id="address" class="row mt-5 text-white">
+                    <div class="col-md-4 text-center">
+                        <h1><i class="fas fa-map-marked text-warning mb-3"></i></h1>
+                        <p>Address <br> Tangail, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 text-center">
+                        <h1><i class="far fa-envelope text-warning mb-3"></i></h1>
+                        <p>Email <br> zhsaikot@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 text-center">
+                        <h1><i class="fas fa-mobile-alt text-warning mb-3"></i></h1>
+                        <p>Phone <br> 01303387509</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3">
+        <div class="container">
+            <div class="row">
+                <!-- == Copyright Part == -->
+                <div class="col-sm-8 align-self-center py-4">
+                    &copy; 2020 all rights reserved by Md. Ziaul Hasan
+                </div>
+                <nav id="social" class="col-sm-4 align-self-center">
+                    <ul class="nav justify-content-end">
+                        <li><a class="btn btn-light btn-outline-dark rounded-circle" href="https://www.facebook.com/saikotk"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-light btn-outline-dark rounded-circle" href="https://twitter.com/ziaul_saikot"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-light btn-outline-dark rounded-circle" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a class="btn btn-light btn-outline-dark rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <a id="upper" class="btn btn-dark fixed-bottom left-auto mb-4 mx-2" href="">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>

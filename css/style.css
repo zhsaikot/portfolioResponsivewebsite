@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    color: teal;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p {
+    color: rgb(151, 146, 146);
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1rem;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+i {
+    color: yellow;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: teal;
+    border: 0;
+    border-radius: 25px;
+    font-size: .95rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-33 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.col-25 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+
+/*header part*/
+
+header {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: fixed;
+    background-color: #00000045;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.company {
+    padding-left: 35px;
+    float: left;
+}
+
+.comapny img {
+    float: left;
+    display: block;
+}
+
+.company h2 {
+    float: right;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+
+/*== Menu Bar==*/
+
+#main-menu {
+    padding-right: 35px;
+    float: right;
+}
+
+#mobile-icon {
+    display: none;
+}
+
+#main-menu ul {
+    list-style: none;
+}
+
+#main-menu ul li {
+    float: left;
+    margin: 15px 7px;
+}
+
+#main-menu ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: .95rem;
+}
+
+#main-menu ul li a:hover {
+    background-color: teal;
+    border-radius: 5px;
+    color: black;
+}
+
+.active a {
+    background-color: teal;
+    color: black !important;
+    border-radius: 5px;
+}
+
+
+/*--Home Part--*/
+
+#home {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .author-text {
+    text-align: left;
+    margin-top: 200px;
+}
+
+#home p {
+    text-align: left;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#home h6 {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+#home h2 {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home img {
+    height: 450px;
+    width: auto;
+    float: right;
+}
+
+
+/*--About me Part--*/
+
+#progress h5 {
+    text-align: left;
+    color: gray;
+    text-transform: uppercase;
+}
+
+#progress .col-33 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.progressbar {
+    height: 10px;
+    width: 100%;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.progressachive {
+    height: 10px;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+
+/*--Services Part--*/
+
+#service {
+    background-image: url(../images/serve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#service .content {
+    background-color: #ffffff47;
+    border-radius: 5px;
+    padding: 55px;
+}
+
+#service h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#service p {
+    font-size: .9rem;
+    color: white;
+}
+
+#service .content:hover {
+    background-color: teal;
+}
+
+
+/*--Project Part--*/
+
+#project {
+    background-image: url(../images/project.jpg);
+    background-attachment: fixed;
+}
+
+#project img {
+    height: 250px;
+    width: 100%;
+}
+
+#project .content {
+    position: relative;
+}
+
+#project .overlay {
+    position: absolute;
+    bottom: 10px;
+    background-color: teal;
+    left: 10px;
+    right: 10px;
+    padding: 15px;
+    display: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+#project .content:hover .overlay {
+    display: block;
+}
+
+
+/*--Review Part--*/
+
+#review {
+    background-image: url(../images/review.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#review h3 {
+    font-size: 2rem;
+    color: white;
+    margin: 25px auto 30px;
+}
+
+#review h5 {
+    font-size: 1rem;
+    color: white;
+}
+
+
+/*--Contact Part--*/
+
+#contact {
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact h1 {
+    color: white;
+    margin-bottom: 35px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    height: 155px;
+}
+
+#contact .btn {
+    border-radius: 5px;
+    padding: 13px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#address {
+    margin: 50px auto 25px;
+}
+
+#address p {
+    font-size: .9rem;
+    color: white;
+    margin=top: 15px;
+}
+
+
+/* footer part */
+
+footer {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 25px 0px;
+}
+
+#copyright {
+    float: left;
+    color: #484848;
+    margin-top: 10px;
+}
+
+#social {
+    float: right;
+}
+
+#social ul {
+    list-style: none;
+}
+
+#social ul li {
+    float: left;
+    margin: auto 10px;
+    width: 25px;
+    border: 3px solid #484848;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#social ul li:last-child {
+    margin=right: 0px;
+}
+
+#social ul li a i {
+    font-size: 1rem;
+    color: #484848;
+}
+
+#upper {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    height: 30px;
+    width: 40px;
+    background-color: #17161694;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+}
+
+#upper i {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* device view*/
+
+@media(max-width:1100px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:576px) {
+    .col-25,
+    .col-33,
+    .col-50 {
+        width: 100%;
+    }
+    header {
+        background-color: #000000b8;
+    }
+    .company {
+        padding-left: 0px;
+    }
+    /* Menubar part */
+    #mobile-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+    #main-menu {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    #main-menu ul li {
+        float: none;
+    }
+    #main-menu ul li a {
+        display: block;
+    }
+    /* home part */
+    #home .col-50 {
+        width: 50%;
+    }
+    #home img {
+        height: 190px;
+        padding-right: 333px;
+    }
+    #home .author-text {
+        margin-top: 25px;
+    }
+    #home p {
+        font-size: .75rem;
+    }
+    #home h6 {
+        font-size: .9rem;
+    }
+    #home h2 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    #home .btn {
+        font-size: .75rem;
+        padding: 7px 15px;
+    }
+    /* review part */
+    #review .col-25 {
+        width: 50%;
+    }
+    #review .content {
+        margin-top: 34px;
+    }
+    /*footer part*/
+    #copy-right,
+    #social {
+        float: none;
+        text-align: center;
+    }
+    #socila ul {
+        margin-left: 20%;
+    }
+}
